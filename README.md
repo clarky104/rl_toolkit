@@ -6,8 +6,11 @@ I hope this helps :)
 
 # Algorithms
 | Algorithm | Environment(s) | Framework(s) |
-| --------- | :------------: | ------------ |
-| Q Table   | Frozen Lake    | Tensorflow   |
+| :-------: | :------------: | :----------: |
+| Q Table   | Frozen Lake    | TensorFlow   |
+| DQN       | CartPole       | TensorFlow   |
+| Reinforce | CartPole       | PyTorch      |
+
 
 **Disclaimer**
 - All of the algorithms are targeted towards OpenAI Gym's CartPole environment for the sake of simplicity
