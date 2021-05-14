@@ -5,7 +5,7 @@ The goal of this repository is to be used as a tool for reinforcement learning n
 I hope this helps :)
 
 ## Algorithms
-| Algorithm | Environment(s) | Framework(s) |
+| Algorithm | Environment | Framework(s) |
 | :-------: | :------------: | :----------: |
 | Q Table   | Frozen Lake    | TensorFlow   |
 | DQN       | CartPole       | TensorFlow   |
