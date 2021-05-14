@@ -1,6 +1,6 @@
 # Reinforcement Learning Toolkit
 
-The goal of this repository is to be used as a tool for reinforcement learning newcomers. My plan is to provide you all with intuitive and reproducible solutions that will provide  the foundation to become a reinforcement learning stud! Additionally, this will be used as a hub to track my progress with you all. 
+The goal of this repository is to be used as a tool for reinforcement learning newcomers. My plan is to provide you all with intuitive and reproducible solutions that will provide  the foundation to become a reinforcement learning stud! Additionally, this will be used as a hub to track my progress.
 
 I hope this helps :)
 
