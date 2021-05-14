@@ -13,7 +13,7 @@ I hope this helps :)
 
 
 **Disclaimer**
-- All of the algorithms are targeted towards OpenAI Gym's CartPole environment for the sake of simplicity
+- Solutions are developed on the CartPole environment for the sake of simplicity
 
 ## Resources
 ### DeepMind and David Silver's lecture series on an Introduction to Reinforcement Learning
