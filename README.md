@@ -4,6 +4,9 @@ The goal of this repository is to be used as a tool for reinforcement learning n
 
 I hope this helps :)
 
+# Algorithms
+| Algorithm | Environment(s) | Framework(s)
+
 **Disclaimer**
 - All of the algorithms are targeted towards OpenAI Gym's CartPole environment for the sake of simplicity
 
