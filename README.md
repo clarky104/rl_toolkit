@@ -9,7 +9,7 @@ I hope this helps :)
 | :-------: | :------------: | :----------: |
 | Q Table   | Frozen Lake    | TensorFlow   |
 | DQN       | CartPole       | TensorFlow   |
-| Reinforce | CartPole       | PyTorch      |
+| Reinforce/VPG | CartPole       | PyTorch      |
 
 
 **Disclaimer**
