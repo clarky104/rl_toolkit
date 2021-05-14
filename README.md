@@ -6,7 +6,7 @@ I hope this helps :)
 
 # Algorithms
 | Algorithm | Environment(s) | Framework(s) |
-| --------- | -------------- | ------------ |
+| --------- | :------------: | ------------ |
 | Q Table   | Frozen Lake    | Tensorflow   |
 
 **Disclaimer**
