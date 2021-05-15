@@ -10,7 +10,6 @@ I hope this helps :)
 | Q Table   | Frozen Lake    | TensorFlow   |
 | DQN       | CartPole       | TensorFlow   |
 | Reinforce/VPG | CartPole       | PyTorch      |
-| Actor Critic | CartPole | PyTorch |
 
 **Disclaimer**
 - Solutions are developed on the CartPole environment for the sake of simplicity
