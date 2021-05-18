@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+Intro to Reinforcement Learning.pdf
+.vscode/settings.json
