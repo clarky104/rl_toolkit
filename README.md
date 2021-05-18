@@ -10,6 +10,7 @@ I hope this helps :)
 | Q Table   | Frozen Lake    | TensorFlow   |
 | DQN       | CartPole       | TensorFlow   |
 | Reinforce/VPG | CartPole       | PyTorch      |
+| A2C | CartPole | PyTorch |
 
 **Disclaimer**
 - Solutions are developed on the CartPole environment for the sake of simplicity
@@ -18,4 +19,5 @@ I hope this helps :)
 - [DeepMind and David Silver's lecture series on an Introduction to Reinforcement Learning](https://youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB) <br>
 - [Stanford and Emma Brunskill's lecture series on Reinforcement Learning](https://youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u) <br>
 - [OpenAI Spinning Up](https://spinningup.openai.com/en/latest/)
+- [Reinforcement Learning Review](https://lilianweng.github.io/lil-log/2018/02/19/a-long-peek-into-reinforcement-learning.html)
 
