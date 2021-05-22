@@ -1,19 +1,21 @@
 ## Reinforcement Learning Toolkit
 
-The goal of this repository is to be used as a tool for reinforcement learning newcomers. My plan is to provide you all with intuitive and reproducible solutions that will provide the foundation for you to become a reinforcement learning stud! Additionally, this will be used as a hub to track my progress.
+The goal of this repository is to be used as a tool for reinforcement learning newcomers. My plan is to provide intuitive and reproducible algorithms that can be used as the building blocks for more nuanced solutions. Additionally, this will be used as a hub to track my own learning journey.
 
 I hope this helps :)
 
 ## Algorithms
-| Algorithm | Environment | Framework(s) |
+| Algorithm | Environment | Framework |
 | :-------: | :------------: | :----------: |
 | Q Table   | Frozen Lake    | TensorFlow   |
 | DQN       | CartPole       | TensorFlow   |
 | Reinforce/VPG | CartPole       | PyTorch      |
 | A2C | CartPole | PyTorch |
+| Dueling DQN | CartPole | PyTorch | 
 
 **Disclaimer**
 - Solutions are developed on the CartPole environment for the sake of simplicity
+- Dueling DQN does not converge yet, requires further modification
 
 ## Resources
 - [DeepMind and David Silver's lecture series on an Introduction to Reinforcement Learning](https://youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB) <br>
