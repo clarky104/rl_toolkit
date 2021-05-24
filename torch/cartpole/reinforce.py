@@ -3,12 +3,13 @@ import torch
 import numpy as np
 import torch.nn as nn
 import torch.nn.functional as F
+import matplotlib.pyplot as plt
 from torch.optim import Adam
 from torch.distributions import Categorical
-import matplotlib.pyplot as plt
+from common.supplement import plot, is_solved
 
 # hyperparameters
-ALPHA = 1e-3
+ALPHA = 1e-2
 GAMMA = 0.99
 TRAIN_LENGTH = 1000
 
@@ -42,7 +43,7 @@ class REINFORCE():
     def loss(self, state_list, action_list, reward_list):
         self.optim.zero_grad()
         future_return = self.discount_rewards(reward_list)
-        G = torch.tensor(np.sum(future_return))
+        G = torch.sum(future_return)
         action_prob = self.mlp(state_list)
         dist = Categorical(action_prob)
         log_prob = -dist.log_prob(action_list)
@@ -72,12 +73,8 @@ class REINFORCE():
             self.loss(torch.FloatTensor(states), torch.LongTensor(actions), np.array(rewards))
             returns.append(np.sum(rewards))
             mean_return.append(np.mean(returns[-100:]))
-            if np.mean(returns[-100:]) >= 195.0 and not solved:
-                print(f'Solved CartPole in {episode} episodes :)')
-                solved = True
-            elif episode + 1 == TRAIN_LENGTH:
-                print('You failed.')
-                
+            solved = is_solved(mean_return, solved, episode, TRAIN_LENGTH)
+
         return returns, mean_return
     
     def act(self, rational=True):
@@ -93,17 +90,8 @@ class REINFORCE():
                     state = next_state
         self.env.close()
         
-    def plot(self, returns, mean_returns):
-        plt.plot(returns, label='Episodic Return')
-        plt.plot(mean_returns, label='Mean Return')
-        plt.title('REINFORCE Training Curve')
-        plt.legend()
-        plt.xlabel('Episodes')
-        plt.ylabel('Total Return')
-        plt.show()
-
 if __name__ == '__main__':
     reinforce = REINFORCE()
     returns, mean_returns = reinforce.learn()
-    reinforce.plot(returns, mean_returns)
+    plot(returns, mean_returns, 'REINFORCE')
     reinforce.act()

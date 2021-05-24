@@ -6,6 +6,7 @@ import torch.nn.functional as F
 from torch.optim import Adam
 from torch.distributions import Categorical
 import matplotlib.pyplot as plt
+from common.supplement import plot, is_solved
 
 # hyperparameters
 ALPHA_ACTOR = 1e-3
@@ -91,25 +92,11 @@ class A2C():
             
             returns.append(np.sum(rewards))
             mean_return.append(np.mean(returns[-100:]))
-            if mean_return[-1] >= 195.0 and not solved:
-                print(f'Solved CartPole in {episode} episodes :)')
-                solved = True
-                break
-            elif episode + 1 == TRAIN_LENGTH:
-                print('You failed.')
-                
-        return returns, mean_return
+            solved = is_solved(mean_return, solved, episode, TRAIN_LENGTH)
 
-    def plot(self, returns, mean_return):
-        plt.plot(returns, label='Episodic Return')
-        plt.plot(mean_return, label='Mean Return')
-        plt.title('A2C Training Curve')
-        plt.legend()
-        plt.xlabel('Episodes')
-        plt.ylabel('Total Return')
-        plt.show()
+        return returns, mean_return
 
 if __name__ == '__main__':
     a2c = A2C()
     returns, mean_return = a2c.learn()
-    a2c.plot(returns, mean_return)
+    plot(returns, mean_return, 'A2C')

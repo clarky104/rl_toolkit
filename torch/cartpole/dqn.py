@@ -7,6 +7,7 @@ import torch.nn.functional as F
 from torch.optim import Adam
 from collections import deque
 import matplotlib.pyplot as plt
+from common.supplement import plot, is_solved
 
 # hyperparameters
 ALPHA = 2e-3
@@ -91,25 +92,11 @@ class DQN():
 
             total_return.append(episodic_return)
             mean_return.append(np.mean(total_return[-100:]))
-            if mean_return[-1] >= 195.0 and not solved:
-                print(f'Solved CartPole in {episode} episodes :)')
-                solved = True
-                break
-            elif episode + 1 == TRAIN_LENGTH:
-                print('You failed.')
+            solved = is_solved(mean_return, solved, episode, TRAIN_LENGTH)
 
         return total_return, mean_return
-
-    def plot(self, returns, mean_return):
-        plt.plot(returns, label='Episodic Return')
-        plt.plot(mean_return, label='Mean Return')
-        plt.title('DQN Training Curve')
-        plt.legend()
-        plt.xlabel('Episodes')
-        plt.ylabel('Total Return')
-        plt.show()
 
 if __name__ == '__main__':
     dqn = DQN()
     total_return, mean_return = dqn.act()
-    dqn.plot(total_return, mean_return)
+    plot(total_return, mean_return, 'DQN')
