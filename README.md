@@ -14,7 +14,7 @@ I hope this helps :)
 | A2C | CartPole | PyTorch |
 
 **Disclaimer**
-- Solutions are developed on the CartPole environment for the sake of simplicity
+- Solutions are developed on the CartPole environment for sake of simplicity
 
 ## Resources
 - [DeepMind and David Silver's lecture series on an Introduction to Reinforcement Learning](https://youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB) 
