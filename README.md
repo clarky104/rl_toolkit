@@ -1,4 +1,4 @@
-## Reinforcement Learning Toolkit
+## RL Toolkit
 
 The goal of this repository is to be used as a tool for reinforcement learning newcomers. My plan is to provide intuitive and reproducible algorithms that can be used as the building blocks for more nuanced solutions. Additionally, this will be used as a hub to track my own learning journey.
 
