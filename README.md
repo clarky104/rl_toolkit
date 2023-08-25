@@ -1,8 +1,6 @@
 ## RL Toolkit
 
-The goal of this repository is to be used as a tool for reinforcement learning newcomers. My plan is to provide intuitive and reproducible algorithms that can be used as the building blocks for more nuanced solutions. Additionally, this will be used as a hub to track my own learning journey.
-
-I hope this helps :)
+RL Toolkit is a collection of RL algorithms written in PyTorch & NumPy.
 
 ## Algorithms
 | Algorithm | Environment | Framework |
@@ -12,9 +10,6 @@ I hope this helps :)
 | Dueling DQN | CartPole | PyTorch | 
 | Reinforce/VPG | CartPole       | PyTorch      |
 | A2C | CartPole | PyTorch |
-
-**Disclaimer**
-- Solutions are developed on the CartPole environment for sake of simplicity
 
 ## Resources
 - [DeepMind and David Silver's lecture series on an Introduction to Reinforcement Learning](https://youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB) 
